@@ -5,5 +5,5 @@
   tasks:
     - name: copy jar file to tomcat.
       copy:
-        src: /var/lib/jenkins/workspace/demo/target/spring-petclinic-2.4.5.jar
+        src: /var/lib/jenkins/workspace/demo1/target/spring-petclinic-2.4.5.jar
         dest: /opt/apache-tomcat-9.0.30/webapps
