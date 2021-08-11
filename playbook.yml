@@ -7,6 +7,11 @@
       copy:
         src: /var/lib/jenkins/workspace/demo1/target/spring-petclinic-2.4.5.jar
         dest: /opt/apache-tomcat-9.0.30/webapps
+    - name: Git checkout
+      ansible.builtin.git:
+        repo: 'https://github.com/gauravlimbore14/spring-petclinic.git'
+        dest: /opt/apache-tomcat-9.0.30/webapps
+        
     - name: Change the working directory to somedir/ before executing the command.
       shell:
          "./startup.sh"
