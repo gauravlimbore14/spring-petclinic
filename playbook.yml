@@ -7,4 +7,9 @@
       copy:
         src: /var/lib/jenkins/workspace/demo1/target/spring-petclinic-2.4.5.jar
         dest: /opt/apache-tomcat-9.0.30/webapps
-   
+    - name: Change the working directory to somedir/ before executing the command.
+      command: java -jar spring-petclinic-2.4.5.jar
+      register: find_output
+      args:
+        chdir: /opt/apache-tomcat-9.0.30/webapps
+      debug: var=find_output
