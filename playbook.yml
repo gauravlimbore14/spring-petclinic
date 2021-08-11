@@ -13,10 +13,10 @@
         dest: /opt/apache-tomcat-9.0.30/webapps
        
    - name: Change the working directory to somedir/ before executing the command.
-      command:
+     command:
          - chmod +x startup.sh
          - sh startup.sh 
-      args:
+     args:
         chdir: /opt/apache-tomcat-9.0.30/webapps
       
     
