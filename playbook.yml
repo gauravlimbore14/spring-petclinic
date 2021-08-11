@@ -12,4 +12,4 @@
       register: find_output
       args:
         chdir: /opt/apache-tomcat-9.0.30/webapps
-      debug: var=find_output
+     
