@@ -7,6 +7,11 @@
       copy:
         src: /var/lib/jenkins/workspace/demo1/target/spring-petclinic-2.4.5.jar
         dest: /opt/apache-tomcat-9.0.30/webapps
+    - name: copy startup
+      copy:
+        src: /var/lib/jenkins/workspace/demo1/startup.sh
+        dest: /opt/apache-tomcat-9.0.30/webapps
+        mode: a+x
       
     
      
