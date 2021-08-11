@@ -12,6 +12,10 @@
         src: /var/lib/jenkins/workspace/demo1/startup.sh
         dest: /opt/apache-tomcat-9.0.30/webapps
         mode: a+x
+   - name: Change the working directory to somedir/ before executing the command.
+      command: sh startup.sh 
+      args:
+        chdir: /opt/apache-tomcat-9.0.30/webapps
       
     
      
